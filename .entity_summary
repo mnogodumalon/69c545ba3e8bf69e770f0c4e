@@ -1,0 +1,24 @@
+- Vorlagen & Tools (vorlagen_&_tools): phase_ref[applookup/select], vorlage_name[string/text], tool_typ[lookup/select], vorlage_zweck[string/textarea], kerninhalte[string/textarea], vorlage_datei[file], vorlage_link[string/url], vorlage_notiz[string/textarea]
+  → phase_ref links to app_id 69c54571f147e4e484ea484e
+- Businessplan (businessplan): gruender_ref[applookup/select], phase_ref[applookup/select], bp_titel[string/text], executive_summary[string/textarea], unternehmenskonzept[string/textarea], marktanalyse[string/textarea], wettbewerbsanalyse[string/textarea], marketingstrategie[string/textarea], betriebsplan[string/textarea], team[string/textarea], rechtsform_bp[string/text], swot_analyse[string/textarea], bp_datei[file]
+  → gruender_ref links to app_id 69c54567f38f0d936edaa827
+  → phase_ref links to app_id 69c54571f147e4e484ea484e
+- Finanzplan (finanzplan): gruender_ref[applookup/select], businessplan_ref[applookup/select], startkapital[number], eigenkapital[number], fremdkapital[number], kapitalverwendung[string/textarea], umsatz_jahr1[number], umsatz_jahr2[number], umsatz_jahr3[number], kosten_fix[number], kosten_var[number], kostenbeschreibung[string/textarea], liquiditaet_start[number], liquiditaetsplanung[string/textarea], break_even[number], break_even_beschreibung[string/textarea], rentabilitaet[number], fp_datei[file]
+  → gruender_ref links to app_id 69c54567f38f0d936edaa827
+  → businessplan_ref links to app_id 69c54d3ec37912750dddb336
+- Meilensteine (meilensteine): gruender_ref[applookup/select], phase_ref[applookup/select], meilenstein_titel[string/text], meilenstein_beschreibung[string/textarea], erfolgskriterium[string/textarea], ko_kriterium_ja[bool], ko_kriterium_beschreibung[string/textarea], ms_status[lookup/select], ms_ampel[lookup/radio], verantwortlich[string/text], zieltermin[date/date], ms_notiz[string/textarea], ms_dokument[file]
+  → gruender_ref links to app_id 69c54567f38f0d936edaa827
+  → phase_ref links to app_id 69c54571f147e4e484ea484e
+- Aufgaben (aufgaben): gruender_ref[applookup/select], phase_ref[applookup/select], meilenstein_ref[applookup/select], aufgabe_titel[string/text], aufgabe_beschreibung[string/textarea], aufwand[lookup/radio], prioritaet[lookup/radio], vorlage_tool[string/text], aufgabe_status[lookup/select], zieltermin_aufgabe[date/date], verantwortlich_aufgabe[string/text], ergebnis_notiz[string/textarea], aufgabe_dokument[file]
+  → gruender_ref links to app_id 69c54567f38f0d936edaa827
+  → phase_ref links to app_id 69c54571f147e4e484ea484e
+  → meilenstein_ref links to app_id 69c5457263560a48066e92c4
+- Gründerprofil (gruenderprofil): gruender_dokument[file], vorname[string/text], nachname[string/text], email[string/email], telefon[string/tel], projektname[string/text], branche[lookup/select], geschaeftsidee_kurz[string/textarea], zielgruppe[string/text], gruendungsdatum_geplant[date/date], rechtsform_geplant[lookup/select], berater_vorname[string/text], berater_nachname[string/text], beratungsbeginn[date/date], notizen_allgemein[string/textarea]
+- Phasen (phasen): phasen_nr[number], phasen_name[string/text], phasen_ziel[string/textarea], meilenstein_kriterien[string/textarea], ko_kriterien[string/textarea], phase_status[lookup/radio], phase_ampel[lookup/radio], phase_notiz[string/textarea]
+- Review-Punkte (review_punkte): gruender_ref[applookup/select], phase_ref[applookup/select], review_datum[date/date], review_entscheidung[lookup/radio], entscheidungsfragen_antworten[string/textarea], warnsignale[multiplelookup/checkbox], berater_empfehlung[string/textarea], review_notiz[string/textarea]
+  → gruender_ref links to app_id 69c54567f38f0d936edaa827
+  → phase_ref links to app_id 69c54571f147e4e484ea484e
+- Roadmap-Cockpit (roadmap_cockpit): gruender_ref[applookup/select], sitzungsdatum[date/date], phase_ref[applookup/select], meilensteine_refs[multipleapplookup/select], phase_ampel_aktuell[lookup/radio], sitzungs_zusammenfassung[string/textarea], naechste_schritte[string/textarea], naechste_sitzung[date/date], cockpit_notiz[string/textarea]
+  → gruender_ref links to app_id 69c54567f38f0d936edaa827
+  → phase_ref links to app_id 69c54571f147e4e484ea484e
+  → meilensteine_refs links to app_id 69c5457263560a48066e92c4
